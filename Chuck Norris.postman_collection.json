@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "d9ce953a-bf53-4e36-ad7b-d8dccf55a4c2",
+		"name": "Chuck Norris",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49769382",
+		"_collection_link": "https://garciacanca-2705579.postman.co/workspace/Mar%C3%ADa-Garc%C3%ADa-Canca's-Workspace~1a208fad-0409-485e-84e3-01f766a0d37b/collection/49769382-d9ce953a-bf53-4e36-ad7b-d8dccf55a4c2?action=share&source=collection_link&creator=49769382"
+	},
+	"item": [
+		{
+			"name": "Random Joke",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/random",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Random Joke from Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/random?category=travel",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"random"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "travel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/categories",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
